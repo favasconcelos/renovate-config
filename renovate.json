@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base",
+    "schedule:nonOfficeHours"
+  ],
+  "assignees": [
+    "favasconcelos"
+  ],
+  "baseBranches": [
+    "develop"
+  ],
+  "automerge": true
+}
