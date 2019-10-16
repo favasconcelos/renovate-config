@@ -5,7 +5,7 @@
     ":maintainLockFilesWeekly",
     ":automergeAll",
     ":pinVersions",
-    ":rebaseStalePrs",
+    ":rebaseStalePrs"
   ],
   "assignees": [
     "favasconcelos"
