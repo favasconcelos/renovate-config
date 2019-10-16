@@ -1,13 +1,16 @@
 {
   "extends": [
     "config:base",
-    "schedule:nonOfficeHours"
+    "schedule:nonOfficeHours",
+    ":maintainLockFilesWeekly",
+    ":automergeAll",
+    ":pinVersions",
+    ":rebaseStalePrs",
   ],
   "assignees": [
     "favasconcelos"
   ],
   "baseBranches": [
     "develop"
-  ],
-  "automerge": true
+  ]
 }
