@@ -1,27 +1,16 @@
 {
   "extends": [
+    "config:base",
     "schedule:nonOfficeHours",
     ":maintainLockFilesWeekly",
     ":automergeAll",
-    ":pinVersions",    
-    ":ignoreModulesAndTests",
-    ":prConcurrentLimit10",
-    ":prNotPending",
+    ":pinVersions"
   ],
   "packageRules": [
     {
-      "groupName": "ESLint and Prettier",
-      "packageNames": ["eslint", "prettier"],
-      "packagePatterns": ["^eslint-config-", "^eslint-plugin-"]
-    },
-    {
+      "description": "merge everything except major",      
       "updateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
-    },
-    {
-      "description": "disable package.json > engines update",
-      "depTypeList": ["engines"],
-      "enabled": false
     }
   ],
   "assignees": [
