@@ -8,9 +8,10 @@
   ],
   "packageRules": [
     {
-      "description": "merge everything except major",      
+      "description": "merge everything except major",
       "updateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch"
     }
   ],
   "assignees": [
