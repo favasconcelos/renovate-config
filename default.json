@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
     "schedule:nonOfficeHours",
@@ -9,7 +10,12 @@
   "packageRules": [
     {
       "description": "merge everything except major",
-      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "updateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "automerge": true,
       "automergeType": "branch"
     }
