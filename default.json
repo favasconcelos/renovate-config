@@ -5,7 +5,8 @@
     "schedule:nonOfficeHours",
     ":maintainLockFilesWeekly",
     ":automergeAll",
-    ":pinVersions"
+    ":pinVersions",
+    ":disableDependencyDashboard"
   ],
   "packageRules": [
     {
